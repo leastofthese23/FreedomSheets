@@ -4,7 +4,7 @@
     <nav>
         <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox"> @* Makes the 3 lines interactive, triggers slideover. *@
         <label class="m-menu__toggle" for="menu">
-            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
                  @* 3 lines (hamburger) *@
                 <line x1="3" y1="12" x2="21" y2="12"></line>
                 <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -69,7 +69,7 @@
                 @* <li><label @onclick='() => NavigationManager.NavigateTo($"{AppConstants.PageName_Weather}")'>Create New Song Sheet</label></li> *@
                 @* <li><label @onclick='NavigateToCreateNewSongSheet'>Create New Song Sheet</label></li> *@
                 <li>
-                    <NavLink class="nav-link" href="weather">
+                    <NavLink class="nav-link" href="NewSheet">
                         <label>Create New Song Sheet</label>
                     </NavLink>
                 </li>
@@ -81,8 +81,5 @@
 
 @code
 {
-    private void NavigateToCreateNewSongSheet()
-    {
-        NavigationManager.NavigateTo($"/{AppConstants.PageName_Weather}");
-    }
+
 }

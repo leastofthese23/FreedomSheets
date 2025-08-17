@@ -2,6 +2,6 @@
 {
     public class AppConstants
     {
-        public const string PageName_Weather = "Weather";
+        public const string PageName_NewSheet = "NewSheet";
     }
 }
