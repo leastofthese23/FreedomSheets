@@ -1,0 +1,29 @@
+﻿line {
+    background-color: white;
+    border-color: white;
+}
+
+iframe {
+    border: none;
+}
+
+.block-label {
+    color: grey;
+}
+
+.music-notes {
+    color: lightseagreen;
+}
+
+.verse-lyrics {
+    color: white;
+}
+
+.song-title {
+    color: white;
+}
+
+.chorus-lyrics {
+    color: white;
+    font-weight: bold;
+}
