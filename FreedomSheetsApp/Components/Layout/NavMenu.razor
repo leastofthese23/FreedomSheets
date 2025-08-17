@@ -1,4 +1,6 @@
-﻿<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+﻿@inject NavigationManager NavigationManager
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
     <nav>
         <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox"> @* Makes the 3 lines interactive, triggers slideover. *@
         <label class="m-menu__toggle" for="menu">
@@ -23,7 +25,7 @@
                 <span>MENU</span>
             </div>
             <ul>
-                <li><label>Item 1</label></li>
+                @* <li><label>Item 1</label></li>
                 <li>
                     <label class="a-label__chevron" for="item-2">Theme</label>
                     <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
@@ -63,11 +65,24 @@
                             <li><label>Item 2.5</label></li>
                         </ul>
                     </div>
+                </li> *@
+                @* <li><label @onclick='() => NavigationManager.NavigateTo($"{AppConstants.PageName_Weather}")'>Create New Song Sheet</label></li> *@
+                @* <li><label @onclick='NavigateToCreateNewSongSheet'>Create New Song Sheet</label></li> *@
+                <li>
+                    <NavLink class="nav-link" href="weather">
+                        <label>Create New Song Sheet</label>
+                    </NavLink>
                 </li>
-                <li><label>Item 3</label></li>
                 <li><label>Item 4</label></li>
             </ul>
         </div>
     </nav>
 </div>
 
+@code
+{
+    private void NavigateToCreateNewSongSheet()
+    {
+        NavigationManager.NavigateTo($"/{AppConstants.PageName_Weather}");
+    }
+}
