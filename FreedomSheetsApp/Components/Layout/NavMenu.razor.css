@@ -49,8 +49,8 @@ nav {
         z-index: 1;
         overflow: hidden;
         background-color: white; /*main background color for the main menu*/
-        /*opacity: 0.2; this will make every opaque, even the text. Use RGB instead. */ 
-        background-color: rgba(25, 25, 25, 0.95);
+        /*opacity: 0.2; this will make everything opaque, even the text. Use RGB instead. */ 
+        background-color: rgba(25, 25, 25, 0.96);
     }
 
     nav .m-menu__overlay {
@@ -59,7 +59,7 @@ nav {
         top: 0;
         width: 100%;
         bottom: 0;
-        z-index: 1;
+        z-index: 1; /* makes menu appear over rest of page */
         display: none;
     }
 
@@ -72,7 +72,6 @@ nav {
         display: flex;
         -webkit-justify-content: space-around;
         justify-content: space-around;
-        -ms-flex-pack: space-around;
         -webkit-align-items: center;
         align-items: center;
         border-bottom: 1px solid purple; /* #e8e8e8;*/
