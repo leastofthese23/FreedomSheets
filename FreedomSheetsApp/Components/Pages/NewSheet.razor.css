@@ -1,0 +1,10 @@
+﻿
+.sheet-edit-table-cell {
+    /*border: 1px solid #333; border size & color*/
+    border-collapse: collapse; /*No margin around the cells*/
+}
+
+.sheet-edit-table-header {
+    color: #90E5FC; /*header row text color*/
+    font-weight: normal;
+}

@@ -2,4 +2,60 @@
 
 <PageTitle>Home</PageTitle>
 
+@if (SongSheetsHTML != null)
+{
+    @((MarkupString)SongSheetsHTML)
+}
 
+<script>
+    // window.onload = function() {
+    //     Your function code here
+    //     call another function
+    //     loadSetList();
+    // };
+
+    // function loadSetList() {
+    //     console.log("test");
+    //     Read all of the text from the file
+
+    // }
+</script>
+
+@code {
+    public string SongSheetsHTML;
+
+    protected override async Task OnInitializedAsync()
+    {
+        string pathToUserFiles = "../FreedomSheetsApp/User Files";
+        string pathToMusicSheetsFolder = $"{pathToUserFiles}/Music Sheets";
+        string[] songTitles = File.ReadAllLines($"{pathToUserFiles}/SetList.txt");
+        List<string> fullPaths = new();
+        List<string> lstHTML = new();
+
+        foreach (string songTitle in songTitles)
+        {
+            fullPaths.Add($"{pathToMusicSheetsFolder}/{songTitle}.html");
+        }
+
+        foreach (string path in fullPaths)
+        {
+            string fileText = File.ReadAllText(path);
+            SongSheetsHTML += "<br><br><br><br><br><br><br><br>"; // insert line breaks before the next song sheet
+            SongSheetsHTML += fileText;
+            //lstHTML.Add(fileText);
+        }
+
+        int i = 0;
+        //     Simulate asynchronous loading to demonstrate streaming rendering
+        //     await Task.Delay(500);
+
+        //     var startDate = DateOnly.FromDateTime(DateTime.Now);
+        //     var summaries = new[] { "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching" };
+        //     forecasts = Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        //     {
+        //         Date = startDate.AddDays(index),
+        //         TemperatureC = Random.Shared.Next(-20, 55),
+        //         Summary = summaries[Random.Shared.Next(summaries.Length)]
+        //     }).ToArray();
+    }
+}
