@@ -11,7 +11,7 @@
 
 nav {
     height: 50px;
-    padding: 0 16px; /* this does not cause the menu to always appear slightly on the left. */
+    padding: 0 16px;
     display: -ms-flexbox;
     display: -webkit-box;
     display: -webkit-flex;
@@ -64,7 +64,7 @@ nav {
     }
 
     nav .m-menu__header {
-        padding: 0 16px; /* this does not cause the menu to always appear slightly on the left. */
+        padding: 0 16px;
         height: 50px;
         display: -ms-flexbox;
         display: -webkit-box;
@@ -74,7 +74,7 @@ nav {
         justify-content: space-around;
         -webkit-align-items: center;
         align-items: center;
-        border-bottom: 1px solid purple; /* #e8e8e8;*/
+        border-bottom: 1px solid purple;
     }
 
         nav .m-menu__header span {
@@ -100,13 +100,13 @@ nav {
         nav .m-menu ul li a, nav .m-menu ul li label {
             display: block;
             text-align: left;
-            padding: 0 15px; /* this does not cause the menu to always appear slightly on the left. */
+            padding: 0 15px;
             line-height: 47px;
             text-decoration: none;
             color: white;
             cursor: pointer;
             font-size: 1rem;
-            border-bottom: 1px solid pink; /* #e8e8e8;*/
+            border-bottom: 1px solid pink;
             position: relative;
         }
 

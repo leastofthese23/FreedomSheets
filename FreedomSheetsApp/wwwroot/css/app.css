@@ -52,5 +52,9 @@ h1:focus {
 }
 
 .anchor-right {
-    float: left;
+    float: right;
+}
+
+.block-header {
+    color: grey;
 }
