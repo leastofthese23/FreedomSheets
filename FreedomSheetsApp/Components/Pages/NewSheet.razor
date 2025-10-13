@@ -17,252 +17,256 @@ For each table, it should have a matching number of columns for the notes and wo
 It is sometimes necessary to add a note in between words. It can also be necessary at times to add a note before or after a word; hence, 
 there must be a capability to add a blank space/empty word in any place, and put a note/chord above the blank word.
 *@
-<div class="block-header">Verse 1</div>
-<table>
-    <tr>
-        <th class="music-notes">Em</th>
-        <th class="music-notes"></th>
-        <th class="music-notes"></th>
-        <th class="music-notes"></th>
-        <th class="music-notes">D</th>
-        <th class="music-notes"></th>
-        <th class="music-notes">Em</th>
-        <th class="music-notes"></th>
-        <th class="music-notes"></th>
-        <th class="music-notes">D</th>
-        <th class="music-notes"></th>
-        <th class="music-notes">C</th>
-    </tr>
-    <tr>
-        <td class="verse-lyrics">Got</td>
-        <td class="verse-lyrics">a</td>
-        <td class="verse-lyrics">lot</td>
-        <td class="verse-lyrics">in</td>
-        <td class="verse-lyrics">my</td>
-        <td class="verse-lyrics">past</td>
-        <td class="verse-lyrics">Got</td>
-        <td class="verse-lyrics">a</td>
-        <td class="verse-lyrics">lot</td>
-        <td class="verse-lyrics">on</td>
-        <td class="verse-lyrics">my</td>
-        <td class="verse-lyrics">mind</td>
-    </tr>
-</table>
-<table>
-    <tr>
-        <th class="music-notes"></th>
-        <th class="music-notes"></th>
-        <th class="music-notes">Em</th>
-        <th class="music-notes"></th>
-        <th class="music-notes"></th>
-        <th class="music-notes"></th>
-        <th class="music-notes anchor-right">D</th> @* To anchor a word to the right, add the anchor-right class. *@
-        <th class="music-notes"></th>
-        <th class="music-notes"></th>
-        <th class="music-notes"></th>
-        <th class="music-notes">Em</th>
-        <th class="music-notes"></th>
-        <th class="music-notes"></th>
-        <th class="music-notes">D</th>
-        <th class="music-notes"></th>
-        <th class="music-notes">C</th>
-    </tr>
-    <tr>
-        <td class="verse-lyrics">There's</td>
-        <td class="verse-lyrics">a</td>
-        <td class="verse-lyrics">lot</td>
-        <td class="verse-lyrics">of</td>
-        <td class="verse-lyrics">things</td>
-        <td class="verse-lyrics">I</td>
-        <td class="verse-lyrics">want</td>
-        <td class="verse-lyrics">back</td>
-        <td class="verse-lyrics">There's</td>
-        <td class="verse-lyrics">a</td>
-        <td class="verse-lyrics">lot</td>
-        <td class="verse-lyrics">of</td>
-        <td class="verse-lyrics">me</td>
-        <td class="verse-lyrics">I</td>
-        <td class="verse-lyrics">don't</td>
-        <td class="verse-lyrics">like</td>
-    </tr>
-</table>
+<div id="sheet-music-wrapper"> @*Wrapper around all of the blocks in the new sheet. When adding a new section in, an element will be appended to this div. Later on, this will be modified so that an element can be appended anywhere on the sheet.*@
+    <div class="block-header" id="block-section-1">Verse 1 @*Each block of notes (including the section header), such as a verse, has a wrapper around it. Each of these divs should have a unique ID. The template comes with unique IDs for each notes block in the template. When a new block is added, a unique id is given to it *@
+        <table>
+            <tr>
+                <th class="music-notes">Em</th>
+                <th class="music-notes"></th>
+                <th class="music-notes"></th>
+                <th class="music-notes"></th>
+                <th class="music-notes">D</th>
+                <th class="music-notes"></th>
+                <th class="music-notes">Em</th>
+                <th class="music-notes"></th>
+                <th class="music-notes"></th>
+                <th class="music-notes">D</th>
+                <th class="music-notes"></th>
+                <th class="music-notes">C</th>
+            </tr>
+            <tr>
+                <td class="verse-lyrics">Got</td>
+                <td class="verse-lyrics">a</td>
+                <td class="verse-lyrics">lot</td>
+                <td class="verse-lyrics">in</td>
+                <td class="verse-lyrics">my</td>
+                <td class="verse-lyrics">past</td>
+                <td class="verse-lyrics">Got</td>
+                <td class="verse-lyrics">a</td>
+                <td class="verse-lyrics">lot</td>
+                <td class="verse-lyrics">on</td>
+                <td class="verse-lyrics">my</td>
+                <td class="verse-lyrics">mind</td>
+            </tr>
+        </table>
+        <table id="table-notes-block-2">
+            <tr>
+                <th class="music-notes"></th>
+                <th class="music-notes"></th>
+                <th class="music-notes">Em</th>
+                <th class="music-notes"></th>
+                <th class="music-notes"></th>
+                <th class="music-notes"></th>
+                <th class="music-notes anchor-right">D</th> @* To anchor a word to the right, add the anchor-right class. *@
+                <th class="music-notes"></th>
+                <th class="music-notes"></th>
+                <th class="music-notes"></th>
+                <th class="music-notes">Em</th>
+                <th class="music-notes"></th>
+                <th class="music-notes"></th>
+                <th class="music-notes">D</th>
+                <th class="music-notes"></th>
+                <th class="music-notes">C</th>
+            </tr>
+            <tr>
+                <td class="verse-lyrics">There's</td>
+                <td class="verse-lyrics">a</td>
+                <td class="verse-lyrics">lot</td>
+                <td class="verse-lyrics">of</td>
+                <td class="verse-lyrics">things</td>
+                <td class="verse-lyrics">I</td>
+                <td class="verse-lyrics">want</td>
+                <td class="verse-lyrics">back</td>
+                <td class="verse-lyrics">There's</td>
+                <td class="verse-lyrics">a</td>
+                <td class="verse-lyrics">lot</td>
+                <td class="verse-lyrics">of</td>
+                <td class="verse-lyrics">me</td>
+                <td class="verse-lyrics">I</td>
+                <td class="verse-lyrics">don't</td>
+                <td class="verse-lyrics">like</td>
+            </tr>
+        </table>
+    </div>
 
-<br>
-<br>
-<div class="block-header">Prechorus 1</div>
-<table>
-    <tr>
-        <th class="music-notes"></th> @*1*@
-        <th class="music-notes">Em</th> @*2*@
-        <th class="music-notes">D</th> @*3*@
-        <th class="music-notes">Em</th> @*4*@
-        <th class="music-notes"></th> @*5*@
-        <th class="music-notes"></th> @*6*@
-        <th class="music-notes">D</th> @*7*@
-        <th class="music-notes"></th> @*8*@
-        <th class="music-notes">C</th> @*9*@
-    </tr>
-    <tr>
-        <td class="verse-lyrics">But</td> @*1*@
-        <td class="verse-lyrics">I</td> @*2*@
-        <td class="verse-lyrics">come</td> @*3*@
-        <td class="verse-lyrics">just</td> @*4*@
-        <td class="verse-lyrics">as</td> @*5*@
-        <td class="verse-lyrics">I</td> @*6*@
-        <td class="verse-lyrics">am</td> @*7*@
-        <td class="verse-lyrics">to</td> @*8*@
-        <td class="verse-lyrics">you</td> @*9*@
-    </tr>
-</table>
-<table>
-    <tr>
-        <th class="music-notes"></th> @*1*@
-        <th class="music-notes">Em</th> @*2*@
-        <th class="music-notes">D</th> @*3*@
-        <th class="music-notes">Em</th> @*4*@
-        <th class="music-notes"></th> @*5*@
-        <th class="music-notes">D</th> @*6*@
-        <th class="music-notes"></th> @*7*@
-        <th class="music-notes">C</th> @*8*@
-    </tr>
-    <tr>
-        <td class="verse-lyrics">And</td> @*1*@
-        <td class="verse-lyrics">I</td> @*2*@
-        <td class="verse-lyrics">know</td> @*3*@
-        <td class="verse-lyrics">just</td> @*4*@
-        <td class="verse-lyrics">what</td> @*5*@
-        <td class="verse-lyrics">you're</td> @*6*@
-        <td class="verse-lyrics">gonna</td> @*7*@
-        <td class="verse-lyrics">do</td> @*8*@
-    </tr>
-</table>
+    <br>
+    <br>
+    <div class="block-header" id="block-section-2">Prechorus 1
+        <table>
+            <tr>
+                <th class="music-notes"></th> @*1*@
+                <th class="music-notes">Em</th> @*2*@
+                <th class="music-notes">D</th> @*3*@
+                <th class="music-notes">Em</th> @*4*@
+                <th class="music-notes"></th> @*5*@
+                <th class="music-notes"></th> @*6*@
+                <th class="music-notes">D</th> @*7*@
+                <th class="music-notes"></th> @*8*@
+                <th class="music-notes">C</th> @*9*@
+            </tr>
+            <tr>
+                <td class="verse-lyrics">But</td> @*1*@
+                <td class="verse-lyrics">I</td> @*2*@
+                <td class="verse-lyrics">come</td> @*3*@
+                <td class="verse-lyrics">just</td> @*4*@
+                <td class="verse-lyrics">as</td> @*5*@
+                <td class="verse-lyrics">I</td> @*6*@
+                <td class="verse-lyrics">am</td> @*7*@
+                <td class="verse-lyrics">to</td> @*8*@
+                <td class="verse-lyrics">you</td> @*9*@
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th class="music-notes"></th> @*1*@
+                <th class="music-notes">Em</th> @*2*@
+                <th class="music-notes">D</th> @*3*@
+                <th class="music-notes">Em</th> @*4*@
+                <th class="music-notes"></th> @*5*@
+                <th class="music-notes">D</th> @*6*@
+                <th class="music-notes"></th> @*7*@
+                <th class="music-notes">C</th> @*8*@
+            </tr>
+            <tr>
+                <td class="verse-lyrics">And</td> @*1*@
+                <td class="verse-lyrics">I</td> @*2*@
+                <td class="verse-lyrics">know</td> @*3*@
+                <td class="verse-lyrics">just</td> @*4*@
+                <td class="verse-lyrics">what</td> @*5*@
+                <td class="verse-lyrics">you're</td> @*6*@
+                <td class="verse-lyrics">gonna</td> @*7*@
+                <td class="verse-lyrics">do</td> @*8*@
+            </tr>
+        </table>
+    </div>
 
-
-<br>
-<br>
-<div class="block-header">Chorus 1</div>
-<table>
-    <tr>
-        <th class="music-notes"></th> @*1*@
-        <th class="music-notes"></th> @*2*@
-        <th class="music-notes"></th> @*3*@
-        <th class="music-notes">Em D C</th> @*4*@
-        <th class="music-notes"></th> @*5*@
-        <th class="music-notes"></th> @*6*@
-        <th class="music-notes"></th> @*7*@
-        <th class="music-notes">C</th> @*8*@
-        <th class="music-notes">D</th> @*9*@
-        <th class="music-notes"></th> @*10*@
-        <th class="music-notes">Em</th> @*11*@
-    </tr>
-    <tr>
-        <td class="chorus-lyrics">When</td> @*1*@
-        <td class="chorus-lyrics">I</td> @*2*@
-        <td class="chorus-lyrics">need</td> @*3*@
-        <td class="chorus-lyrics">grace</td> @*4*@
-        <td class="chorus-lyrics">you</td> @*5*@
-        <td class="chorus-lyrics">give</td> @*6*@
-        <td class="chorus-lyrics">it</td> @*7*@
-        <td class="chorus-lyrics">wholehearted,</td> @*8*@
-        <td class="chorus-lyrics">give</td> @*9*@
-        <td class="chorus-lyrics">it</td> @*10*@
-        <td class="chorus-lyrics">wholehearted</td> @*11*@
-    </tr>
-</table>
-<table>
-    <tr>
-        <th class="music-notes"></th> @*1*@
-        <th class="music-notes"></th> @*2*@
-        <th class="music-notes"></th> @*3*@
-        <th class="music-notes"></th> @*4*@
-        <th class="music-notes">Em D C</th> @*5*@
-        <th class="music-notes"></th> @*6*@
-        <th class="music-notes"></th> @*7*@
-        <th class="music-notes">C</th> @*8*@
-        <th class="music-notes">D</th> @*9*@
-        <th class="music-notes">Em</th> @*10*@
-    </tr>
-    <tr>
-        <td class="chorus-lyrics">When</td> @*1*@
-        <td class="chorus-lyrics">I</td> @*2*@
-        <td class="chorus-lyrics">was</td> @*3*@
-        <td class="chorus-lyrics">a</td> @*4*@
-        <td class="chorus-lyrics">mess</td> @*5*@
-        <td class="chorus-lyrics">you</td> @*6*@
-        <td class="chorus-lyrics">never</td> @*7*@
-        <td class="chorus-lyrics">departed,</td> @*8*@
-        <td class="chorus-lyrics">never</td> @*9*@
-        <td class="chorus-lyrics">departed</td> @*10*@
-    </tr>
-</table>
-<table>
-    <tr>
-        <th class="music-notes">Em</th> @*1*@
-        <th class="music-notes"></th> @*2*@
-        <th class="music-notes"></th> @*3*@
-        <th class="music-notes">D</th> @*4*@
-        <th class="music-notes"></th> @*5*@
-        <th class="music-notes">C</th> @*6*@
-        <th class="music-notes"></th> @*7*@
-        <th class="music-notes"></th> @*8*@
-        <th class="music-notes">C</th> @*9*@
-        <th class="music-notes"></th> @*10*@
-        <th class="music-notes">D</th> @*11*@
-        <th class="music-notes"></th> @*12*@
-        <th class="music-notes">Em</th> @*13*@
-    </tr>
-    <tr>
-        <td class="chorus-lyrics">Faithful</td> @*1*@
-        <td class="chorus-lyrics">when</td> @*2*@
-        <td class="chorus-lyrics">I'm</td> @*3*@
-        <td class="chorus-lyrics">at</td> @*4*@
-        <td class="chorus-lyrics">my</td> @*5*@
-        <td class="chorus-lyrics">worst,</td> @*6*@
-        <td class="chorus-lyrics">no</td> @*7*@
-        <td class="chorus-lyrics">I</td> @*8*@
-        <td class="chorus-lyrics">don't</td> @*9*@
-        <td class="chorus-lyrics">get</td> @*10*@
-        <td class="chorus-lyrics">what</td> @*11*@
-        <td class="chorus-lyrics">I</td> @*12*@
-        <td class="chorus-lyrics">deserve</td> @*13*@
-    </tr>
-</table>
-<table>
-    <tr>
-        <th class="music-notes"></th> @*0*@
-        <th class="music-notes"></th> @*1*@
-        <th class="music-notes"></th> @*2*@
-        <th class="music-notes"></th> @*3*@
-        <th class="music-notes">Em D C</th> @*4*@
-        <th class="music-notes"></th> @*5*@
-        <th class="music-notes"></th> @*6*@
-        <th class="music-notes"></th> @*7*@
-        <th class="music-notes">C</th> @*8*@
-        <th class="music-notes">D</th> @*9*@
-        <th class="music-notes"></th> @*10*@
-        <th class="music-notes">Em</th> @*11*@
-    </tr>
-    <tr>
-        <td class="chorus-lyrics">Cause</td> @*0*@
-        <td class="chorus-lyrics">When</td> @*1*@
-        <td class="chorus-lyrics">I</td> @*2*@
-        <td class="chorus-lyrics">need</td> @*3*@
-        <td class="chorus-lyrics">grace</td> @*4*@
-        <td class="chorus-lyrics">you</td> @*5*@
-        <td class="chorus-lyrics">give</td> @*6*@
-        <td class="chorus-lyrics">it</td> @*7*@
-        <td class="chorus-lyrics">wholehearted,</td> @*8*@
-        <td class="chorus-lyrics">give</td> @*9*@
-        <td class="chorus-lyrics">it</td> @*10*@
-        <td class="chorus-lyrics">wholehearted</td> @*11*@
-    </tr>
-</table>
+    <br>
+    <br>
+    <div class="block-header" id="block-section-3">
+        <table>
+            <tr>
+                <th class="music-notes"></th> @*1*@
+                <th class="music-notes"></th> @*2*@
+                <th class="music-notes"></th> @*3*@
+                <th class="music-notes">Em D C</th> @*4*@
+                <th class="music-notes"></th> @*5*@
+                <th class="music-notes"></th> @*6*@
+                <th class="music-notes"></th> @*7*@
+                <th class="music-notes">C</th> @*8*@
+                <th class="music-notes">D</th> @*9*@
+                <th class="music-notes"></th> @*10*@
+                <th class="music-notes">Em</th> @*11*@
+            </tr>
+            <tr>
+                <td class="chorus-lyrics">When</td> @*1*@
+                <td class="chorus-lyrics">I</td> @*2*@
+                <td class="chorus-lyrics">need</td> @*3*@
+                <td class="chorus-lyrics">grace</td> @*4*@
+                <td class="chorus-lyrics">you</td> @*5*@
+                <td class="chorus-lyrics">give</td> @*6*@
+                <td class="chorus-lyrics">it</td> @*7*@
+                <td class="chorus-lyrics">wholehearted,</td> @*8*@
+                <td class="chorus-lyrics">give</td> @*9*@
+                <td class="chorus-lyrics">it</td> @*10*@
+                <td class="chorus-lyrics">wholehearted</td> @*11*@
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th class="music-notes"></th> @*1*@
+                <th class="music-notes"></th> @*2*@
+                <th class="music-notes"></th> @*3*@
+                <th class="music-notes"></th> @*4*@
+                <th class="music-notes">Em D C</th> @*5*@
+                <th class="music-notes"></th> @*6*@
+                <th class="music-notes"></th> @*7*@
+                <th class="music-notes">C</th> @*8*@
+                <th class="music-notes">D</th> @*9*@
+                <th class="music-notes">Em</th> @*10*@
+            </tr>
+            <tr>
+                <td class="chorus-lyrics">When</td> @*1*@
+                <td class="chorus-lyrics">I</td> @*2*@
+                <td class="chorus-lyrics">was</td> @*3*@
+                <td class="chorus-lyrics">a</td> @*4*@
+                <td class="chorus-lyrics">mess</td> @*5*@
+                <td class="chorus-lyrics">you</td> @*6*@
+                <td class="chorus-lyrics">never</td> @*7*@
+                <td class="chorus-lyrics">departed,</td> @*8*@
+                <td class="chorus-lyrics">never</td> @*9*@
+                <td class="chorus-lyrics">departed</td> @*10*@
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th class="music-notes">Em</th> @*1*@
+                <th class="music-notes"></th> @*2*@
+                <th class="music-notes"></th> @*3*@
+                <th class="music-notes">D</th> @*4*@
+                <th class="music-notes"></th> @*5*@
+                <th class="music-notes">C</th> @*6*@
+                <th class="music-notes"></th> @*7*@
+                <th class="music-notes"></th> @*8*@
+                <th class="music-notes">C</th> @*9*@
+                <th class="music-notes"></th> @*10*@
+                <th class="music-notes">D</th> @*11*@
+                <th class="music-notes"></th> @*12*@
+                <th class="music-notes">Em</th> @*13*@
+            </tr>
+            <tr>
+                <td class="chorus-lyrics">Faithful</td> @*1*@
+                <td class="chorus-lyrics">when</td> @*2*@
+                <td class="chorus-lyrics">I'm</td> @*3*@
+                <td class="chorus-lyrics">at</td> @*4*@
+                <td class="chorus-lyrics">my</td> @*5*@
+                <td class="chorus-lyrics">worst,</td> @*6*@
+                <td class="chorus-lyrics">no</td> @*7*@
+                <td class="chorus-lyrics">I</td> @*8*@
+                <td class="chorus-lyrics">don't</td> @*9*@
+                <td class="chorus-lyrics">get</td> @*10*@
+                <td class="chorus-lyrics">what</td> @*11*@
+                <td class="chorus-lyrics">I</td> @*12*@
+                <td class="chorus-lyrics">deserve</td> @*13*@
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th class="music-notes"></th> @*0*@
+                <th class="music-notes"></th> @*1*@
+                <th class="music-notes"></th> @*2*@
+                <th class="music-notes"></th> @*3*@
+                <th class="music-notes">Em D C</th> @*4*@
+                <th class="music-notes"></th> @*5*@
+                <th class="music-notes"></th> @*6*@
+                <th class="music-notes"></th> @*7*@
+                <th class="music-notes">C</th> @*8*@
+                <th class="music-notes">D</th> @*9*@
+                <th class="music-notes"></th> @*10*@
+                <th class="music-notes">Em</th> @*11*@
+            </tr>
+            <tr>
+                <td class="chorus-lyrics">Cause</td> @*0*@
+                <td class="chorus-lyrics">When</td> @*1*@
+                <td class="chorus-lyrics">I</td> @*2*@
+                <td class="chorus-lyrics">need</td> @*3*@
+                <td class="chorus-lyrics">grace</td> @*4*@
+                <td class="chorus-lyrics">you</td> @*5*@
+                <td class="chorus-lyrics">give</td> @*6*@
+                <td class="chorus-lyrics">it</td> @*7*@
+                <td class="chorus-lyrics">wholehearted,</td> @*8*@
+                <td class="chorus-lyrics">give</td> @*9*@
+                <td class="chorus-lyrics">it</td> @*10*@
+                <td class="chorus-lyrics">wholehearted</td> @*11*@
+            </tr>
+        </table>
+    </div>
+</div>
 
 
 <nav id="context-menu" class="context-menu">
     <ul class="context-menu__items">
         <li class="context-menu__item">
-            <a href="#" data-action="add-verse" class="context-menu__link"> Add Verse</a>
+            <a href="/NewSheet" data-action="add-verse" class="context-menu__link"> Add Verse</a>
         </li>
         <li class="context-menu__item">
             <a href="#" class="context-menu__link"> Add Chorus</a>
@@ -280,26 +284,21 @@ there must be a capability to add a blank space/empty word in any place, and put
 
 
 <script>
-    var contextMenuClassName = "context-menu";
-    var contextMenuItemClassName = "context-menu__item";
-    var contextMenuLinkClassName = "context-menu__link";
-    var contextMenuActive = "context-menu--active";
-    var taskItemClassName = "task";
-    var taskItemInContext;
-    var clickCoords;
-    var clickCoordsX;
-    var clickCoordsY;
-    var menu = document.querySelector("#context-menu");
-    var menuItems = menu.querySelectorAll(".context-menu__item");
-    var menuState = 0;
-    let MenuOpen = false;
-    var menuWidth;
-    var menuHeight;
-    var menuPosition;
-    var menuPositionX;
-    var menuPositionY;
-    var windowWidth;
-    var windowHeight;
+    var MenuOpen = false;
+    var ContextMenuActive = "context-menu--active";
+    var MenuElement = document.querySelector("#context-menu");
+    var UniqueIdCounter = 4;
+    var VerseTemplate;
+
+
+    function wait(ms){
+        var start = new Date().getTime();
+        var end = start;
+        while(end < start + ms) {
+            end = new Date().getTime();
+        }
+    }
+
 
 
     function logToConsole(message) {
@@ -346,109 +345,184 @@ there must be a capability to add a blank space/empty word in any place, and put
 
 
     function init() {
+        fetch('../verse.html') // TODO: make web address dynamic
+            .then(response => response.text())
+            .then((data) => {
+                console.log(`data = ${data}`);
+                console.log(`data.text = ${data.text}`);
+                VerseTemplate = data;
+            });
+
         contextListener();
+        //console.log('init - adding click listener.');
         clickListener();
+        //console.log('init - finished adding click listener. calling keyupListener...');
         keyupListener();
+        //console.log('init - finished adding ckeyupListener. calling resizeListener...');
         resizeListener();
+        //console.log('init - finished adding resizeListener. exiting init...');
     }
 
 
     function contextListener() {
         document.addEventListener("contextmenu", function(e) {
-            taskItemInContext = clickInsideElement(e, taskItemClassName);
+            console.log('contextListener 0');
+            //var taskItemInContext = clickInsideElement(e, "task"); // this should check if the click is on one of the context menu items, but instead causes the menu to never open.
+            console.log('contextListener 0.5');
 
             //if (taskItemInContext) {
-            if (!MenuOpen) {
-                e.preventDefault();
-                toggleMenuOn();
-                positionMenu(e);
-            } else {
-                taskItemInContext = null;
-                toggleMenuOff();
-            }
+                if (MenuOpen) {
+                    console.log('contextListener - Menu is open');
+                    //taskItemInContext = null;
+                    console.log('contextListener - toggling menu off...');
+                    toggleMenuOff();
+                    //console.log('contextListener 6');
+                
+                } else {
+                    console.log('contextListener - Menu is NOT open');
+                    e.preventDefault();
+                    console.log('contextListener - toggling menu on...');
+                    toggleMenuOn();
+                    //console.log('contextListener 3');
+                    positionMenu(e);
+                }
+            //}
 
-            //MenuOpen = !MenuOpen;
+            console.log('contextListener 7');
         });
     }
 
 
     function clickListener() {
         document.addEventListener("click", function(e) {
-            var clickeElIsLink = clickInsideElement(e, contextMenuLinkClassName);
+            console.log('clickListener 10');
+            var clickeElIsLink = clickInsideElement(e, "context-menu__link"); // TODO: change all var to let
+            //console.log('clickListener 11');
 
             if (clickeElIsLink) {
+                console.log('clickListener 12');
                 e.preventDefault();
-                menuItemListener(clickeElIsLink);
+                //console.log('clickListener - calling menuItemListener...');
+                menuItemListener(clickeElIsLink); // this is where the text "add-verse" is getting logged to the console
+                console.log('clickListener - just finished calling menuItemListener. Exiting...');
+                //wait(5000);
             } else {
+                //console.log('clickListener 15');
                 var button = e.which || e.button;
+                console.log('clickListener 16');
                 if (button === 1) {
+                    console.log('clickListener - button === 1. tolggling menu off...');
                     toggleMenuOff();
+                    console.log('clickListener 18');
                 }
             }
         });
     }
 
 
+    // If user presses esc button then close the menu
     function keyupListener() {
         window.onkeyup = function(e) {
             if (e.keyCode === 27) {
+                console.log('keyupListener - toggling menu off...');
                 toggleMenuOff();
             }
         }
     }
 
 
+    // If the user is resizing the browser window then close the context menu for now.
     function resizeListener() {
         window.onresize = function(e) {
+            console.log('resizeListener - toggling menu off...');
             toggleMenuOff();
         };
     }
 
 
+    // Safe method for toggling on the context menu. Does check first to make sure menu is closed before attempting to open.
     function toggleMenuOn() {
-        if (menuState !== 1) {
-            menuState = 1;
-            menu.classList.add(contextMenuActive);
+        if (!MenuOpen) {
+            console.log('toggleMenuOn - Menu is not open. Adding classList and setting MenuOpen to true...');
+            console.log('toggleMenuOn - adding classList...');
+            MenuElement.classList.add(ContextMenuActive);
+            MenuOpen = true;
+            console.log('toggleMenuOn - finished adding classList.');
+        } else {
+            console.log('toggleMenuOn - menu is already open.');
         }
     }
 
     
+    // Safe method for toggling off the context menu. Does check first to make sure menu is open before attempting to close.
     function toggleMenuOff() {
-        if (menuState !== 0) {
-            menuState = 0;
-            menu.classList.remove(contextMenuActive);
+        console.log('toggleMenuOff 1');
+
+        if (MenuOpen) {
+            console.log('toggleMenuOff - Menu is open. Removing classList and setting MenuOpen to false...');
+            console.log('toggleMenuOff - removing context menu...');
+            //wait(5000);
+            MenuElement.classList.remove(ContextMenuActive); // this doesn't seem to be causing an issue. Page still redirects, even when this is commented out.
+            MenuOpen = false;
+            console.log('toggleMenuOff - the context menu was just removed. Exiting toggleMenuOff...');
+            //wait(5000);
+        } else {
+            console.log('toggleMenuOff - the menu is already closed.');
         }
     }
 
 
     function positionMenu(e) {
-        clickCoords = getPosition(e);
-        clickCoordsX = clickCoords.x;
-        clickCoordsY = clickCoords.y;
+        var clickCoords = getPosition(e);
+        var clickCoordsX = clickCoords.x;
+        var clickCoordsY = clickCoords.y;
 
-        menuWidth = menu.offsetWidth + 4;
-        menuHeight = menu.offsetHeight + 4;
+        var menuWidth = MenuElement.offsetWidth + 4;
+        var menuHeight = MenuElement.offsetHeight + 4;
 
-        windowWidth = window.innerWidth;
-        windowHeight = window.innerHeight;
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;
 
         if ((windowWidth - clickCoordsX) < menuWidth) {
-            menu.style.left = windowWidth - menuWidth + "px";
+            MenuElement.style.left = windowWidth - menuWidth + "px";
         } else {
-            menu.style.left = clickCoordsX + "px";
+            MenuElement.style.left = clickCoordsX + "px";
         }
 
         if ((windowHeight - clickCoordsY) < menuHeight) {
-            menu.style.top = windowHeight - menuHeight + "px";
+            MenuElement.style.top = windowHeight - menuHeight + "px";
         } else {
-            menu.style.top = clickCoordsY + "px";
+            MenuElement.style.top = clickCoordsY + "px";
         }
     }
 
 
+    // Function called to take an action from clicking on one of the menu items. After action is taken, closes the menu.
     function menuItemListener(link) {
-      console.log(link.getAttribute("data-action"));
-      toggleMenuOff();
+        console.log(link.getAttribute("data-action")); // this is where the data action attribute is logged to the console.
+
+        var sheetMusicWrapperDiv = document.getElementById('sheet-music-wrapper');
+
+        if (sheetMusicWrapperDiv){
+            console.log('sheetMusicWrapperDiv found.');
+        } else {
+            console.log('sheetMusicWrapperDiv NOT found.');
+        }
+
+        let newDiv = document.createElement('div');
+        newDiv.innerHTML = VerseTemplate;
+        console.log('Just created newDiv.');
+
+        newDiv.id = `block-section-${UniqueIdCounter}`;
+        UniqueIdCounter++;
+        //newDiv.innerHTML = '<p>CreateElement example</p>';
+        sheetMusicWrapperDiv.appendChild(newDiv);
+
+        console.log('menuItemListener  - toggling menu off...');
+        //wait(5000);
+        toggleMenuOff();
+        console.log('menuItemListener - the menu was just toggled off. Exiting...');
+        //wait(5000);
     }
 
 

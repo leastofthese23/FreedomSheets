@@ -17,4 +17,10 @@
     <Folder Include="wwwroot\bootstrap\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\verse.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
